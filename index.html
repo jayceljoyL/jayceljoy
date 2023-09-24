@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Profile</title>
+
+    <style>
+
+        p,
+        h3 {
+            padding: 5px;
+            text-align: center;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 2, 1fr;
+            grid-template-rows: 5, 1vh;
+            grid-template-areas: 
+            "name name "
+            "img info "
+            "goal goal";
+            gap: 5px;
+        }
+
+    
+        .name {
+            grid-column: 1/3;
+            grid-row: 2/2;
+        }
+
+        .img {
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+
+        .info{
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }
+
+        .goal {
+            grid-column: 1/3;
+            grid-row: 3/4;
+        }
+        
+        /*grid color */
+        
+        .name {
+            background-color: rgb(107, 219, 103);
+        }
+        .img {
+            background-color: rgb(241, 245, 238);
+        }
+        .info{
+            background-color: rgb(106, 212, 97);
+         }
+         .goal {
+            background-color: rgb(41, 219, 25);
+         }
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+         @media only screen and (max-width: 768px) {
+
+        .name {
+            grid-column: 1/3;
+            grid-row: 1/2;
+        }
+
+        .img {
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+
+        .info{
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }
+        .goal {
+            grid-column: 1/3;
+            grid-row: 3/4;
+        }
+    }
+/* Medium devices (landscape tablets, 768px and up) */
+        @media only screen and (min-width: 768px) {
+
+        .name {
+            grid-column: 1/3;
+            grid-row: 1/2;
+        }
+
+        .img {
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+
+        .info{
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }
+        .goal {
+            grid-column: 1/3;
+            grid-row: 3/4;
+    }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+         @media only screen and (min-width: 992px) {
+
+            .name {
+            grid-column: 1/3;
+            grid-row: 1/2;
+        }
+
+        .img {
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+
+        .info{
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }
+        .goal {
+            grid-column: 1/3;
+            grid-row: 3/4;
+    }
+}
+    </style>
+</head>
+<body>
+
+<div class="grid-container">
+
+<div class="container">
+    
+        <div class="nname">
+            <h2>Welcome, I'm Jayceljoy!</h2>
+         
+        </div>
+
+
+        <div class="img">
+            <img src="joy.jpg" class="image" alt="picture" width="352" height="325">
+        </div>
+        
+        
+        <div class="info">
+            <p>Good Day! My name is Jayceljoy Recto Lugay, you can call me "Inday" for short. I am a College student at Central Philippines State University- Kabankalan. I curently live in Linaon, Cauayan, Negros Occidental. I am the forth child or the younger child in my family. I born on March 23, 2002. My parents name are Jessie Opciar Lugay and Marivic Recto Lugay. My skills is adaptability. I am a hardworking girl. One of my best qualities is that I am always ready for a challenge and eager to progress. I love playing table tennis and chess games and I'm a passionate about listening to music. I aim to become a successful IT Professional. I also hope to learn a lot from my classes and make friends along the way. Thank you!</p>
+        
+           <h2>Social Media</h2>
+
+             <a href="https://www.facebook.com/chimonxjayceljoyruangwiwat">facebook</a>
+             <a href="https://www.instagram.com/_heyyyjoy/">Instagram</a>
+        </div>
+        
+        <div class="goal">
+            <h3>My Short-term goal is to get good at the skills I'm learning and move up the success ladder. But in the long rum, I want to be a famous IT Professional in our barangay. That's all, thank youu.</h3>
+        </div>
+
+
+   </div>    
+ </div>
+
+</body>
+</html>
